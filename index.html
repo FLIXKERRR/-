@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.iconpacks.net/icons/1/free-heart-icon-431-thumb.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ส่งจีบเธอ</title>
+  </head>
+  <body>
+    <!-- หน้าแรก -->
+    <div id="mainPage" class="container">
+      <span class="title">หม่ามี๊ซัมป๋อยเบนนี่รักเก๊าม่ายก๊าบบ?</span>
+      <img id="mainImage" src="https://media1.tenor.com/m/26N4m7GwOe8AAAAd/hamster-hamster-driving.gif" alt="Do you?" />
+
+      <!-- ปุ่มกด -->
+      <div class="button-container">
+        <button
+          id="noButton"
+          class="button"
+          onmouseover="changeImage('3.jpg')"
+          onmouseout="resetImage(5.jpg)"
+          onclick="handleNoClick()"
+        >
+          ไม่
+        </button>
+        <button
+          id="loveButton"
+          class="button"
+          onmouseover="changeImage('1.jpg')"
+          onmouseout="resetImage(1.jpg)"
+          onclick="showPage('lovePage')"
+        >
+          รักกก
+        </button>
+      </div>
+    </div>
+
+    <!-- หน้ากด รักกกก -->
+    <div id="lovePage" class="container hidden">
+      <h1>งุ้ยรักเหมือนกันน้าาหม่ามี๋เบนนี่ เเต่รักออกัสด้วยจุ๊บๆ</h1>
+      <img src="4.jpg" alt="Love You" />
+    </div>
+
+    <!-- หน้าถ้ายังจะกด No เรื่อยๆ  -->
+    <div id="noPage" class="container hidden">
+      <img src="2.jpg" alt="Die" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
